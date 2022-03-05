@@ -18,6 +18,7 @@ RUN mvn -f /app/pom.xml clean package
 # 选择运行时基础镜像.
 FROM alpine:3.13
 
+# 微信云托管中数据库信息
 ENV MYSQL_HOST=10.0.224.12
 ENV MYSQL_PORT=3306
 ENV DATABASE_NAME=yili-music
