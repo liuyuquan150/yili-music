@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>indi.ly.yilimusic</groupId>
 	<artifactId>yili_music</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>yili_music</name>
 	<description>yili_music</description>
 	<properties>
