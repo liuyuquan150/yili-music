@@ -18,11 +18,6 @@ RUN mvn -f /app/pom.xml clean package
 # 选择运行时基础镜像.
 FROM alpine:3.13
 
-ENV MYSQL_HOST=127.0.0.1
-ENV DATABASE_NAME=yili-music
-ENV MYSQL_USER_NAME=root
-ENV MYSQL_USER_PASSWORD=grush
-
 # 安装依赖包, 如需其它依赖包, 请到alpine依赖包管理(https://pkgs.alpinelinux.org/packages?name=php8*imagick*&branch=v3.13)查找.
 RUN apk add --update --no-cache openjdk8-jre-base \
     && rm -f /var/cache/apk/*
