@@ -2,6 +2,7 @@ package indi.ly.yilimusic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * <h2><span style="color: red;">依力音乐应用程序</span></h2>
@@ -14,6 +15,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SuppressWarnings("unused")
 public class YiliMusicApplication {
 	public static void main(String[] args) {
-		var yiliMusicApplication = SpringApplication.run(YiliMusicApplication.class, args);
+		ConfigurableApplicationContext yiliMusicApplication = SpringApplication.run(YiliMusicApplication.class, args);
 	}
 }
