@@ -19,6 +19,7 @@ RUN mvn -s /app/settings.xml -f /app/pom.xml clean package
 FROM alpine:3.13
 
 ENV MYSQL_HOST=10.0.224.12
+ENV MYSQL_PORT=3306
 ENV DATABASE_NAME=yili-music
 ENV MYSQL_USER_NAME=root
 ENV MYSQL_USER_PASSWORD=LiuYuQuan150
